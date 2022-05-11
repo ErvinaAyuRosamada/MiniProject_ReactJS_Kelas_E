@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+  padding: 1rem;
+}
+
+#navbar{
+  background-color: #0b834b;
+  text-align: start;
+  color: white;
+  padding: 1rem;
+}
+
+.home{
+  text-align:end;
+  padding: 15%;
+  background: linear-gradient(to right, rgb(19, 105, 72), #ffffff);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font: size 100px;
+}
+
+button{
+  background-color: #000000;
+  border-style: double;
+  color: white;
+  size: 2rem;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#footer{
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
