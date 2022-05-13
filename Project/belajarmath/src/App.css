@@ -12,7 +12,7 @@
 
 .home{
   text-align:end;
-  padding: 15%;
+  padding: 10%;
   background: linear-gradient(to right, rgb(19, 105, 72), #ffffff);
   background-size: cover;
   background-repeat: no-repeat;
@@ -31,8 +31,28 @@ button{
   font-size: 16px;
 }
 
+.matericlass{
+  padding: 5%;
+  background: linear-gradient(to right, rgba(19, 105, 72, 0.473), #ffffff);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-style:hidden;
+}
+
+h2{
+  text-align: center;
+}
+
+#listmateri{
+  margin-top: 1%;
+  border-style: groove;
+  background-color: rgb(19, 105, 72);
+  border-radius: 20px;
+}
+
 #footer{
   background-color: black;
   color: white;
   padding: 1rem;
+  text-align: center;
 }
