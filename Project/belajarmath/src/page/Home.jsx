@@ -14,7 +14,7 @@ const Home = () => {
                     <div class="col-6">
                         <h4>Belajar Matematika dengan Mudah</h4>
                         <p>Tanpa perlu keluar rumah dan belajar secara gratis hanya di sini</p><br></br>
-                    <button><Link to='matericlass'>Get Start</Link></button>
+                    <Link to='matericlass'><button>Get Start</button></Link>
                     </div>
                 </div>
         </div>
