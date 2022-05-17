@@ -7,9 +7,9 @@ function DaftarMateriClass ({materimath}) {
         <div>
             <div class="matericlass">
                 <h2>Daftar Materi</h2>
-                <div class="row">
-                    <div class="col-3">
-                        {materimath.map((materi) => <ListMateri materi={materi}/>)}
+                <div>
+                    <div className="row m-auto justify-content-center">
+                        {materimath.map((data) => <ListMateri data={data}/>)}
                     </div>
                 </div>
             </div>
