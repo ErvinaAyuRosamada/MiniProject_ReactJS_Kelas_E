@@ -43,7 +43,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Navbar />}>
           <Route index element={<Home />} />
-          <Route path="matericlass" element={<DaftarMateriClass materimath={data}/>} />
+          <Route path="matericlass" element={<DaftarMateriClass materimath={!loading ? data : []}/>} />
           <Route path="about" element={<About/>}/>
           <Route path="contactus" element={<ContactUs/>}/>
 
