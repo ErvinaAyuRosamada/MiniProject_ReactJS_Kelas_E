@@ -1,3 +1,5 @@
+import Footer from "../components/Footer"
+
 export const LinearSatuVariable = () => {
 
     return(
@@ -36,9 +38,11 @@ export const LinearSatuVariable = () => {
                 <div>
                     
                     <p>Sama seperti persamaan linear satu variabel, pertidaksamaan linear satu variabel juga merupakan kalimat terbuka, di mana belum diketahui kebenarannya, dan juga pada PTLSV juga berlaku keharusan yang sama pada ruas kiri maupun ruas kanan.</p>
-                    
+
                 </div>
             </div>
+
+            <Footer/>
 
         </div>
     )

@@ -12,11 +12,13 @@
 
 .home{
   text-align:end;
-  padding: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   background: linear-gradient(to right, rgb(19, 105, 72), #ffffff);
-  background-size: cover;
+  background-size:cover;
   background-repeat: no-repeat;
-  font: size 100px;
 }
 
 button{
