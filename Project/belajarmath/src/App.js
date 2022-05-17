@@ -4,6 +4,7 @@ import DaftarMateriClass from './page/DaftarMateriClass';
 import Navbar from './components/navbar';
 import About from './page/About';
 import ContactUs from './page/ContactUs';
+import DetailMateri from './page/DetailMateri';
 
 import { BentukAljabar } from './materi/1';
 import { LinearSatuVariable } from './materi/2';
@@ -28,6 +29,7 @@ const GetListMateri = gql`
     id
     kelas
     materi
+    detail
   }
 }
 `;
@@ -43,9 +45,10 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Navbar />}>
           <Route index element={<Home />} />
-          <Route path="matericlass" element={<DaftarMateriClass materimath={data}/>} />
+          <Route path="matericlass" element={<DaftarMateriClass materimath={!loading ? data : []}/>} />
           <Route path="about" element={<About/>}/>
           <Route path="contactus" element={<ContactUs/>}/>
+          <Route path='detail-materi/:id' element={<DetailMateri />} />
 
           <Route path='1' element={<BentukAljabar/>}/>
           <Route path='2' element={<LinearSatuVariable/>}/>
