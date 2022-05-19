@@ -2,9 +2,8 @@ import './App.css';
 import Home from './page/Home';
 import DaftarMateriClass from './page/DaftarMateriClass';
 import Navbar from './components/navbar';
-import About from './page/About';
-import ContactUs from './page/ContactUs';
 import DetailMateri from './page/DetailMateri';
+import UjiKemampuanDiri from './page/UjiKemampuanDiri';
 
 import { BentukAljabar } from './materi/1';
 import { LinearSatuVariable } from './materi/2';
@@ -22,6 +21,7 @@ import { BangunLengkung } from './materi/12';
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { gql, useQuery } from '@apollo/client';
+import Footer from './components/Footer';
 
 const GetListMateri = gql`
   query MyQuery {
@@ -40,15 +40,15 @@ export default function App() {
   console.log('data',data)
 
   return (
-
+    
+    <div>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Navbar />}>
           <Route index element={<Home />} />
           <Route path="matericlass" element={<DaftarMateriClass materimath={!loading ? data : []}/>} />
-          <Route path="about" element={<About/>}/>
-          <Route path="contactus" element={<ContactUs/>}/>
           <Route path='detail-materi/:id' element={<DetailMateri />} />
+          <Route path='matericlass/ujikemampuan' element={<UjiKemampuanDiri/>}/>
 
           <Route path='1' element={<BentukAljabar/>}/>
           <Route path='2' element={<LinearSatuVariable/>}/>
@@ -62,9 +62,12 @@ export default function App() {
           <Route path='10' element={<PersamaanKuadrat/>}/>
           <Route path='11' element={<Transformasi/>}/>
           <Route path='12' element={<BangunLengkung/>}/>
+
         </Route>
       </Routes>
     </BrowserRouter>
+    <Footer/>
+    </div>
   );
 }
 

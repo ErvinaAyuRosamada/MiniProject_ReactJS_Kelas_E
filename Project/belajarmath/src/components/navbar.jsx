@@ -6,18 +6,18 @@ const Navbar = () => {
 
     return(
         <div>
-                <div class="row" id="navbar">
-                    <div class="col-9">
+                <div className="row" id="navbar">
+                    <div className="col-9">
                         <span><b>Belajar Matematika</b></span>
                     </div>
-                    <div class="col-1">
-                        <Link to="/">Home</Link>
+                    <div className="col-1">
+                        <Link to="/" >Home</Link>
                     </div>
-                    <div class="col-1">
-                        <Link to="/about">About</Link>
+                    <div className="col-1">
+                        <a href="#about">About</a>
                     </div>
-                    <div class="col-1">
-                        <Link to="/contactus">Contact Us</Link>
+                    <div className="col-1">
+                        <a href="#contact">Contact Us</a>
                     </div>
                 </div>
             <Outlet/>

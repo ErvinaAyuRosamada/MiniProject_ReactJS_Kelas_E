@@ -4,24 +4,50 @@
 }
 
 #navbar{
-  background-color: #0b834b;
+  background-color: sienna;
   text-align: start;
   color: white;
+  opacity: 90%;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: +1;
+  position: fixed;
   padding: 1rem;
+}
+
+a:link{
+  text-decoration: none;
+}
+
+a:hover{
+  color: #000000;
 }
 
 .home{
   text-align:end;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  background: linear-gradient(to right, rgb(19, 105, 72), #ffffff);
-  background-size:cover;
-  background-repeat: no-repeat;
+  padding: 5% 20%;
+  padding-top: 10%;
+  background-image: url('../src/assets/pexels-fauxels-3183132.jpg');
+  width:inherit;
+  background-size:100%;
+  background-attachment: fixed;
 }
 
-button{
+.home-1{
+  margin:5%;
+  padding: 10%;
+  /* opacity: 90%; */
+  background-color:rgb(211, 211, 211);
+  background-size: 25%;
+  color:black;
+}
+
+h4{
+  text-align: center;
+}
+
+.get{
   background-color: #000000;
   border-style: double;
   color: white;
@@ -34,11 +60,17 @@ button{
 }
 
 .matericlass{
-  padding: 5%;
-  background: linear-gradient(to right, rgba(19, 105, 72, 0.473), #ffffff);
-  background-size: cover;
+  padding: 10%;
+  /* background-color: #ce9b6b; */
+  /* background: linear-gradient(to right, sienna, #ffffff); */
+  background-image: url('../src/assets/pexels-fauxels-3183132.jpg');
+  width:inherit;
+  display: flex;
+  background-size:100%;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   border-style:hidden;
+  color: #000000;
 }
 
 h2{
@@ -46,15 +78,29 @@ h2{
 }
 
 #listmateri{
+  /* margin: 0.5% 0.5%; */
+  border-style:outset;
+  text-align:start;
+  background-color: rgb(211, 211, 211);
+  /* border-radius: 20px; */
+}
+
+.uji{
+  background-color: brown;
+  padding: 15px 20%;
+  margin-left: 20%;
+  margin-right: 17%;
+  justify-items: center;
   margin-top: 1%;
-  border-style: groove;
-  background-color: rgb(19, 105, 72);
   border-radius: 20px;
+  border-color: #ffffff;
 }
 
 #footer{
   background-color: black;
   color: white;
   padding: 1rem;
+  display: flex;
+  text-transform: uppercase;
   text-align: center;
 }
